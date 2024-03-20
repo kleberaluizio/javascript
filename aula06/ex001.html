@@ -21,8 +21,9 @@
         window.alert('Warning! This is your first javascript program') 
         window.confirm('Are you liking javascript so far?')
         */
-        var firstNumber = Number(window.prompt('Digite o primeiro número: '))
-        var secondNumber = Number(window.prompt('Digite o segundo número: '))
+        var firstNumber = window.prompt('Digite o primeiro número: ')
+        var secondNumber = window.prompt('Digite o segundo número: ')
+        console.log(typeof firstNumber)
         var result = firstNumber + secondNumber
         window.alert(`A soma de ${firstNumber} e ${secondNumber} é igual à, ${result}!`)
     </script>

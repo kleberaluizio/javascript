@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1#title{
+            font: normal 20pt Arial
+        }
+        div#resultado{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Calculadora: SOMA</h1>
+    <input type="text" id="number1"> + 
+    <input type="text" id="number2">
+    <input type="button" value="Somar" onclick="somar()"></input>
+    <div id="resultado"></div>
+    <script>
+        function somar(){
+            var t1 = window.document.querySelector('input#number1')
+            var t2 = window.document.getElementById('number2')
+            var resultado = window.document.getElementById('resultado')
+            var n1 = Number(t1.value)
+            var n2 = Number(t2.value)
+            var s = n1 + n2
+
+            resultado.innerHTML = `O resultado da soma de ${n1} e ${n2} é <strong>${s}</strong>`
+        } 
+    </script>
+</body>
+</html>
